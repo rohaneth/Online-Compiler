@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Online Code Editor</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Code Editor - by Rohan</h1>
+      <div class="editor">
+        <div class="left">
+          <label>HTML </label
+          ><textarea id="html-code" spellcheck="false"> </textarea>
+          <!-- running the function everytime a key is lifted   -->
+          <label>CSS</label
+          ><textarea spellcheck="false" id="css-code"></textarea>
+          <!-- spellcheck is false for textarea, so no underline  -->
+          <label>JavaScript</label
+          ><textarea spellcheck="false" id="js-code"></textarea>
+        </div>
+        <div class="right">
+          <label
+            >Output on WebPage
+            <button onclick="catchCode()">Run Code</button></label
+          >
+          <iframe id="output"></iframe>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
