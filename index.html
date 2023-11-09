@@ -14,21 +14,22 @@
     <section class="container">
       <h1>Code Editor - by Rohan</h1>
       <div class="editor">
+        <div class="navbar1">
+          <h1>HTML</h1>
+          <h1>CSS</h1>
+          <h1>javascript</h1>
+        </div>
         <div class="left">
-          <label>HTML </label
-          ><textarea id="html-code" spellcheck="false"> </textarea>
+          
+          <textarea oninput="catchCode()" id="html-code" spellcheck="false"> </textarea>
           <!-- running the function everytime a key is lifted   -->
-          <label>CSS</label
-          ><textarea spellcheck="false" id="css-code"></textarea>
+          
+          <textarea oninput="catchCode()" spellcheck="false" id="css-code"></textarea>
           <!-- spellcheck is false for textarea, so no underline  -->
-          <label>JavaScript</label
-          ><textarea spellcheck="false" id="js-code"></textarea>
+          
+          <textarea oninput="catchCode()" spellcheck="false" id="js-code"></textarea>
         </div>
         <div class="right">
-          <label
-            >Output on WebPage
-            <button onclick="catchCode()">Run Code</button></label
-          >
           <iframe id="output"></iframe>
         </div>
       </div>
